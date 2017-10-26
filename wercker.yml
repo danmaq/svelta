@@ -1,0 +1,18 @@
+box: node
+build:
+  steps:
+    - npm-install
+deploy:
+  steps:
+    - npm-install
+    - script:
+      name: Install Expo
+      code: |
+        yarn global add exp
+        exp login -u "${EXPO_USER}" -p "${EXPO_PASSWORD}"
+    - script:
+      name: Deploy to Expo
+      code: |
+        cd ${WERCKER_SOURCE_DIR}
+        sed -i -e 's/"packagerOpts": {}/"packagerOpts": { "nonPersistent": "--nonPersistent" }/' app.json
+        exp p

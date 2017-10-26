@@ -1,0 +1,5 @@
+#!/bin/sh
+
+./clean
+npm install
+npm start -- --reset-cache

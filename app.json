@@ -1,0 +1,30 @@
+{
+    "expo": {
+        "name": "Svelta",
+        "description": "🈲🍽 For those who want to diet, try this app. It fuck up photos of your favorite cook.",
+        "slug": "svelta",
+        "privacy": "public",
+        "sdkVersion": "22.0.0",
+        "version": "0.0.1",
+        "primaryColor": "#E9E9EF",
+        "loading": {
+            "exponentIconColor": "blue"
+        },
+        "androidStatusBar": {
+            "barStyle": "dark-content",
+            "backgroundColor": "#E9E9EF"
+        },
+        "ios": {
+            "bundleIdentifier": "host.exp.exponent",
+            "supportsTablet": true
+        },
+        "android": {
+            "package": "host.exp.exponent",
+            "permissions": [
+                "CAMERA",
+                "VIBRATE"
+            ]
+        },
+        "packagerOpts": {}
+    }
+}

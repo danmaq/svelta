@@ -1,0 +1,8 @@
+node_modules/
+.expo/
+npm-debug.*
+package-lock.json
+.wercker*
+
+.DS_Store
+Thumbs.db

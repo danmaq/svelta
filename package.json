@@ -1,0 +1,29 @@
+{
+    "name": "svelta",
+    "version": "0.0.1",
+    "private": false,
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "jest-expo": "^22.0.1",
+        "react-native-scripts": "^1.5.0",
+        "react-test-renderer": "16.0.0-beta.5"
+    },
+    "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+    "scripts": {
+        "start": "react-native-scripts start",
+        "eject": "react-native-scripts eject",
+        "android": "react-native-scripts android",
+        "ios": "react-native-scripts ios",
+        "test": "node node_modules/jest/bin/jest.js --watch"
+    },
+    "jest": {
+        "preset": "jest-expo"
+    },
+    "dependencies": {
+        "ex-react-native-i18n": "^0.0.3",
+        "expo": "^22.0.0",
+        "prop-types": "^15.6.0",
+        "react": "16.0.0-beta.5",
+        "react-native": "github:expo/react-native#sdk-22.0.1"
+    }
+}

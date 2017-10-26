@@ -1,0 +1,5 @@
+#!/bin/sh
+
+which watchman > /dev/null 2>&1 && watchman watch-del-all
+rm -rf ${TMPDIR}/react-* node_modules .wercker package-lock.json
+npm cache clean --force
